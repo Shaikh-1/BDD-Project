@@ -12,7 +12,7 @@ import cucumber.api.java.en.When;
 import junit.framework.Assert;
 
 public class LoginStepDefination {
-	
+	 
 	WebDriver driver;
 	
 	@Given("^User is already on the Login Page$")
