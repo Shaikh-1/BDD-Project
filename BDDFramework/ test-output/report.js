@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/shaikh/eclipse-workspace/BDDFramework/src/main/java/features/login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("login.feature");
 formatter.feature({
   "comments": [
     {
@@ -135,35 +135,35 @@ formatter.match({
   "location": "LoginStepDefination.userInLoginPage()"
 });
 formatter.result({
-  "duration": 15225439474,
+  "duration": 16534811470,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefination.title_of_login_page()"
 });
 formatter.result({
-  "duration": 263971456,
+  "duration": 8380478,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefination.gets_Login()"
 });
 formatter.result({
-  "duration": 159674340,
+  "duration": 137410946,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefination.click_loginButton()"
 });
 formatter.result({
-  "duration": 7837913026,
+  "duration": 8474059022,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefination.user_in_HomePage()"
 });
 formatter.result({
-  "duration": 8598524,
+  "duration": 12703691,
   "status": "passed"
 });
 });
