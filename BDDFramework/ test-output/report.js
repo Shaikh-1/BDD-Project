@@ -135,35 +135,35 @@ formatter.match({
   "location": "LoginStepDefination.userInLoginPage()"
 });
 formatter.result({
-  "duration": 16534811470,
+  "duration": 15335962005,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefination.title_of_login_page()"
 });
 formatter.result({
-  "duration": 8380478,
+  "duration": 13429025,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefination.gets_Login()"
 });
 formatter.result({
-  "duration": 137410946,
+  "duration": 147392867,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefination.click_loginButton()"
 });
 formatter.result({
-  "duration": 8474059022,
+  "duration": 7424886796,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefination.user_in_HomePage()"
 });
 formatter.result({
-  "duration": 12703691,
+  "duration": 8923105,
   "status": "passed"
 });
 });
