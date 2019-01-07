@@ -31,12 +31,12 @@ Feature: Dolna Test Feature
 
  @tag1
   Scenario Outline: Login Scenario
-    Given User is already on the Login Page
-    When Title of the Login Page is #1 Free CRM software in the cloud for sales and service
-    Then user enters "<username>" and "<password>"
-    Then Click on the Login Button
-    Then User is on Home Page
-    Then Close the Browser
+    Given User is already in the Login Page
+    When Title's of the Login Page is #1 Free CRM software in the cloud for sales and service
+    Then user enters "<username>" and "<password>" for login page
+    Then Click on the Login Button2
+   Then User is on Home Page2
+    Then Close the Browser2
     
     Examples:
     | username | password |

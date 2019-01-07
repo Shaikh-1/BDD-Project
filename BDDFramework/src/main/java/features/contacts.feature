@@ -21,22 +21,18 @@ Feature: Contact Page Feature
   I want to use this template for my feature file
 
   @tag1
-  Scenario: Contact Page Operations
-    Given I want to write a step with precondition
-    And some other precondition
-    When I complete action
-    And some other action
-    And yet another action
-    Then I validate the outcomes
-    And check more outcomes
+  Scenario Outline: Contact Page Operations
+    Given User is already on the Login Page
+    When Title of the Login Page is #1 Free CRM software in the cloud for sales and service
+    Then user enters "<username>" and "<password>" for contact page
+    Then Click on the Login Button3
+    Then User is on Home Page3
+    Then User moves to New Contact Page
+    Then User enters Contact Details "<firstname>" and "<lastname>" and "<position>"
+    Then Close the Browser3
 
-  #@tag2
-  #Scenario Outline: Title of your scenario outline
-    #Given I want to write a step with <name>
-    #When I check for the <value> in step
-    #Then I verify the <status> in step
-#
-    #Examples: 
-      #| name  | value | status  |
-      #| name1 |     5 | success |
-      #| name2 |     7 | Fail    |
+
+    Examples: 
+    |  username | password | firstname	 | lastname  | position          |
+    |  shaikh92 | Test@1234| Asit        | Nayak     | Test Lead         |
+    |  shaikh92 | Test@1234| Jyoti       | Prava     | Test Architect    |
