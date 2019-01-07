@@ -20,16 +20,29 @@
 Feature: Dolna Test Feature
   I want to use this template for my feature file
 
-  @tag1
-  Scenario: Login Scenario
+  #@tag1
+  #Scenario: Login Scenario
+    #Given User is already on the Login Page
+    #When Title of the Login Page is #1 Free CRM software in the cloud for sales and service
+    #Then user enters "shaikh92" and "Test@1234"
+    #Then Click on the Login Button
+    #Then User is on Home Page
+    
+
+ @tag1
+  Scenario Outline: Login Scenario
     Given User is already on the Login Page
-    #And some other precondition
     When Title of the Login Page is #1 Free CRM software in the cloud for sales and service
-    Then user enters username and password
+    Then user enters "<username>" and "<password>"
     Then Click on the Login Button
     Then User is on Home Page
-    #And Check the Home page title
-
+    Then Close the Browser
+    
+    Examples:
+    | username | password |
+    | shaikh92 | Test@1234|
+    | Gollie   | Test%67  |
+        
 
 
  

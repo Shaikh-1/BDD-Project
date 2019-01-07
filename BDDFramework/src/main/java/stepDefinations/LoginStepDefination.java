@@ -33,11 +33,13 @@ public class LoginStepDefination {
 			
 		}
 		
-		@Then("^user enters username and password$")
-		public void gets_Login() {
-			driver.findElement(By.name("username")).sendKeys("shaikh92");
-			driver.findElement(By.name("password")).sendKeys("Test@1234");
-		}
+		 @Then("^user enters \"([^\"]*)\" and \"([^\"]*)\"$")
+		 public void gets_Login(String username, String password){
+		 driver.findElement(By.name("username")).sendKeys(username);
+		 driver.findElement(By.name("password")).sendKeys(password);
+		 }
+		
+	
 		
 		@Then("^Click on the Login Button$")
 		public void click_loginButton() {
@@ -51,6 +53,12 @@ public class LoginStepDefination {
 			String title = driver.getTitle();
 			System.out.println(title);
 			Assert.assertEquals("CRMPRO", title);
+		}
+		
+		@Then("^Close the Browser$")
+		public void close_Browser(){
+			driver.close();
+			
 		}
 		
 		

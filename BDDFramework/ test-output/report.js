@@ -86,84 +86,319 @@ formatter.feature({
     }
   ]
 });
-formatter.scenario({
-  "line": 24,
+formatter.scenarioOutline({
+  "comments": [
+    {
+      "line": 23,
+      "value": "#@tag1"
+    },
+    {
+      "line": 24,
+      "value": "#Scenario: Login Scenario"
+    },
+    {
+      "line": 25,
+      "value": "#Given User is already on the Login Page"
+    },
+    {
+      "line": 26,
+      "value": "#When Title of the Login Page is #1 Free CRM software in the cloud for sales and service"
+    },
+    {
+      "line": 27,
+      "value": "#Then user enters \"shaikh92\" and \"Test@1234\""
+    },
+    {
+      "line": 28,
+      "value": "#Then Click on the Login Button"
+    },
+    {
+      "line": 29,
+      "value": "#Then User is on Home Page"
+    }
+  ],
+  "line": 33,
   "name": "Login Scenario",
   "description": "",
   "id": "dolna-test-feature;login-scenario",
-  "type": "scenario",
-  "keyword": "Scenario",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 23,
+      "line": 32,
       "name": "@tag1"
     }
   ]
 });
 formatter.step({
-  "line": 25,
+  "line": 34,
   "name": "User is already on the Login Page",
   "keyword": "Given "
 });
 formatter.step({
-  "comments": [
-    {
-      "line": 26,
-      "value": "#And some other precondition"
-    }
-  ],
-  "line": 27,
+  "line": 35,
   "name": "Title of the Login Page is #1 Free CRM software in the cloud for sales and service",
   "keyword": "When "
 });
 formatter.step({
-  "line": 28,
-  "name": "user enters username and password",
+  "line": 36,
+  "name": "user enters \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 29,
+  "line": 37,
   "name": "Click on the Login Button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 30,
+  "line": 38,
   "name": "User is on Home Page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 39,
+  "name": "Close the Browser",
+  "keyword": "Then "
+});
+formatter.examples({
+  "line": 41,
+  "name": "",
+  "description": "",
+  "id": "dolna-test-feature;login-scenario;",
+  "rows": [
+    {
+      "cells": [
+        "username",
+        "password"
+      ],
+      "line": 42,
+      "id": "dolna-test-feature;login-scenario;;1"
+    },
+    {
+      "cells": [
+        "shaikh92",
+        "Test@1234"
+      ],
+      "line": 43,
+      "id": "dolna-test-feature;login-scenario;;2"
+    },
+    {
+      "cells": [
+        "Gollie",
+        "Test%67"
+      ],
+      "line": 44,
+      "id": "dolna-test-feature;login-scenario;;3"
+    }
+  ],
+  "keyword": "Examples"
+});
+formatter.scenario({
+  "line": 43,
+  "name": "Login Scenario",
+  "description": "",
+  "id": "dolna-test-feature;login-scenario;;2",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 19,
+      "name": "@tag"
+    },
+    {
+      "line": 32,
+      "name": "@tag1"
+    }
+  ]
+});
+formatter.step({
+  "line": 34,
+  "name": "User is already on the Login Page",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 35,
+  "name": "Title of the Login Page is #1 Free CRM software in the cloud for sales and service",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 36,
+  "name": "user enters \"shaikh92\" and \"Test@1234\"",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 37,
+  "name": "Click on the Login Button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 38,
+  "name": "User is on Home Page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 39,
+  "name": "Close the Browser",
   "keyword": "Then "
 });
 formatter.match({
   "location": "LoginStepDefination.userInLoginPage()"
 });
 formatter.result({
-  "duration": 15335962005,
+  "duration": 16901264217,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefination.title_of_login_page()"
 });
 formatter.result({
-  "duration": 13429025,
+  "duration": 11814758,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefination.gets_Login()"
+  "arguments": [
+    {
+      "val": "shaikh92",
+      "offset": 13
+    },
+    {
+      "val": "Test@1234",
+      "offset": 28
+    }
+  ],
+  "location": "LoginStepDefination.gets_Login(String,String)"
 });
 formatter.result({
-  "duration": 147392867,
+  "duration": 152357389,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefination.click_loginButton()"
 });
 formatter.result({
-  "duration": 7424886796,
+  "duration": 7375897016,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefination.user_in_HomePage()"
 });
 formatter.result({
-  "duration": 8923105,
+  "duration": 16364653,
   "status": "passed"
+});
+formatter.match({
+  "location": "LoginStepDefination.close_Browser()"
+});
+formatter.result({
+  "duration": 2322180128,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 44,
+  "name": "Login Scenario",
+  "description": "",
+  "id": "dolna-test-feature;login-scenario;;3",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 19,
+      "name": "@tag"
+    },
+    {
+      "line": 32,
+      "name": "@tag1"
+    }
+  ]
+});
+formatter.step({
+  "line": 34,
+  "name": "User is already on the Login Page",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 35,
+  "name": "Title of the Login Page is #1 Free CRM software in the cloud for sales and service",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 36,
+  "name": "user enters \"Gollie\" and \"Test%67\"",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 37,
+  "name": "Click on the Login Button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 38,
+  "name": "User is on Home Page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 39,
+  "name": "Close the Browser",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "LoginStepDefination.userInLoginPage()"
+});
+formatter.result({
+  "duration": 14822600121,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginStepDefination.title_of_login_page()"
+});
+formatter.result({
+  "duration": 12488525,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Gollie",
+      "offset": 13
+    },
+    {
+      "val": "Test%67",
+      "offset": 26
+    }
+  ],
+  "location": "LoginStepDefination.gets_Login(String,String)"
+});
+formatter.result({
+  "duration": 446144250,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginStepDefination.click_loginButton()"
+});
+formatter.result({
+  "duration": 1449129874,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginStepDefination.user_in_HomePage()"
+});
+formatter.result({
+  "duration": 35025457,
+  "error_message": "junit.framework.ComparisonFailure: expected:\u003c[CRMPRO]\u003e but was:\u003c[#1 Free CRM software in the cloud for sales and service]\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat stepDefinations.LoginStepDefination.user_in_HomePage(LoginStepDefination.java:55)\r\n\tat ✽.Then User is on Home Page(login.feature:38)\r\n",
+  "status": "failed"
+});
+formatter.match({
+  "location": "LoginStepDefination.close_Browser()"
+});
+formatter.result({
+  "status": "skipped"
 });
 });

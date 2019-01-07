@@ -10,7 +10,8 @@ import cucumber.api.junit.Cucumber;
 
 @CucumberOptions(features= "C:\\Users\\shaikh\\git\\BDD-Project\\BDDFramework\\src\\main\\java\\features"
 		,glue= {"stepDefinations"},
-		format= {"pretty", "html: test-output"},
+		format= {"pretty", "html: test-output", "junit:junit_xml/cucumber.xml"},
+		monochrome = true,
 		dryRun = false
 		)
 
